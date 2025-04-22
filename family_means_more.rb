@@ -1,3 +1,19 @@
+require_relative 'models/family'
+require_relative 'services/family_service'
+
+class FamilyMeansMore
+  def initialize
+    @family_service = FamilyService.new
+  end
+
+  def run
+    # Code to run the program
+  end
+end
+
+FamilyMeansMore.new.run
+
+
 # Define the organization's structure
 class FamilyMeansMore
   attr_accessor :executive_director, :program_manager, :housing_coordinator,
